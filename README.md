@@ -1,11 +1,11 @@
 ![logo](logo.png)
 
-# Nodot
-**A video game node library for Godot 4**
+# Nodot3D
+**A 3D video game node library for Godot 4**
 
-## What is Nodot?
+## What is Nodot3D?
 
-Nodot is a 2D and 3D video game oriented collection of general purpose nodes for Godot 4. The goal is to provide a set of nodes that can be used to rapidly create a wide variety of games.
+Nodot is a 3D video game oriented collection of general purpose nodes for Godot 4. The goal is to provide a set of nodes that can be used to rapidly create a wide variety of games.
 
 ---
 
@@ -42,18 +42,6 @@ Nodot is a 2D and 3D video game oriented collection of general purpose nodes for
 - NetworkManager - A simple network manager for multiplayer games
 
 ### Characters
-
-#### Side Scroller
-
-- SideScrollerCharacter - A node to create a side scroller character
-- SideScrollerKeyboardInput - A node to handle side scroller keyboard input
-- SideScrollerJoypadInput - A node to handle side scroller joypad input
-
-#### Top Down
-
-- TopDownCharacter - A node to create a top down character
-- TopDownKeyboardInput - A node to handle top down keyboard input
-- TopDownJoypadInput - A node to handle top down joypad input
 
 #### First Person
 
@@ -115,63 +103,57 @@ Nodot is a 2D and 3D video game oriented collection of general purpose nodes for
 
 ### AI
 
-- LineOfSight2D - A 2D line of sight to detect nodes in line of sight
-- LineOfSight3D - A 3D line of sight to detect nodes in line of sight
-- ViewCone2D - A 2D view cone to detect nodes in line of sight within the limits of the cone
-- ViewCone3D - A 3D view cone to detect nodes in line of sight within the limits of the cone
+- LineOfSight - A line of sight to detect nodes in line of sight
+- ViewCone - A view cone to detect nodes in line of sight within the limits of the cone
 
 ### Targetting
 
-- HitScan2D - Simulate a fast object being fired at a target in 2D
-- HitScan3D - Simulate a fast object being fired at a target in 3D
-- Projectile2D - Simulate a slow moving object being fired at a target in 2D
-- Projectile3D - Simulate a slow moving object being fired at a target in 3D
-- HomingProjectile2D - Simulate a slow moving object that homes in on a target in 2D
-- HomingProjectile3D - Simulate a slow moving object that homes in on a target in 3D
+- HitScan - Simulate a fast object being fired at a target
+- Projectile - Simulate a slow moving object being fired at a target
+- HomingProjectile - Simulate a slow moving object that homes in on a target
 
 ### Damage
 
-- Damage - A node to apply damage
-- Explosion2D - A 2D explosion area damage with line of sight
-- Explosion3D - A 3D explosion area damage with line of sight
-- DamageArea2D - 2D interval area damage
-- DamageArea3D - 3D interval area damage
+- Damagable - A node to apply damage
+- Explosion - An explosion area damage with line of sight
+- DamageArea - Interval based area damage
 
 ### Effects
 
-- ImpactDecal3D - For adding bullet holes/blood splashes etc to 3D surfaces
-- Pointer - A CanvasContainer that follows a 2D or 3D node
+- ImpactDecal - For adding bullet holes/blood splashes etc to surfaces
+- CanvasAttachment - A CanvasContainer that follows a 3D node
 - HealthBar - A node to display a health bar
-- Outliner2D - A node to outline 2D objects
-- Outliner3D - A node to outline 3D objects
-- Flash3D - A node to create a light flash and temporary effect such as a muzzle flash
+- ObjectOutliner - A node to outline objects
+- MuzzleFlash - A node to create a light flash and temporary effect such as a muzzle flash
+
+#### Weather
+
+- RainEffect - A node to create rain effects
+- WindEffect - A node to create wind effects
+- SnowEffect - A node to create snow effects
+- FogEffect - A node to create fog effects
 
 ### Environment
 
 #### Elements
 
-- Fire3D - A node to create 3D fire
-- Fire2D - A node to create 2D fire
-- Water3D - A node to create 3D water
-- Water2D - A node to create 2D water
+- Fire - A node to create fire
+- Water - A node to create water
 
-#### Nature
+### Interactive
 
-- Grass3D - A node to create 3D grass
-- Grass2D - A node to create 2D grass
-
-#### Interactive
-
-- Breakable3D - A node to create 3D breakable objects
-- Breakable2D - A node to create 2D breakable objects
+- Breakable - A node to create breakable objects
+- ShrapnelEmitter - A node to create a shrapnel emitter (e.g. glass shards)
+- Button3D - A node to create an interactive 3D button
 
 ### First Person
 
 - FPSGun - A node to create a first person 3D gun or projectile weapon
 - FPSIronSight - A node to position an ironsight camera
+- FPSLaunchPosition - A node to position the point at which a projectile is launched
 - FPSLeftHand - A node to attach a left hand to the weapon
 - FPSRightHand - A node to attach a left hand to the weapon
-- FPSArms - A node to attach 3D hands and arms to the weapon
+- FPSArms - A node to attach hands to the weapon
 
 ### Sound
 
