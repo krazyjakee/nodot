@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://ccpabu15ssljh"]
-
-[ext_resource type="Script" path="res://ViewCone.gd" id="1_het8s"]
-
-[node name="ViewCone" type="Node3D"]
-script = ExtResource("1_het8s")
