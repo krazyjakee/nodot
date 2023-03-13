@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://x12qghba785f"]
-
-[ext_resource type="Script" path="res://addons/nodot/menus/MenuContainer.gd" id="1_e8147"]
-
-[node name="Menu" type="Node2D"]
-script = ExtResource("1_e8147")
