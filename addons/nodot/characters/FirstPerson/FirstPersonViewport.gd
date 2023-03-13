@@ -9,4 +9,3 @@ func _enter_tree():
   subviewport.add_child(camera3d)
   add_child(subviewport)
   
-  

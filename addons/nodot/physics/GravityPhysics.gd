@@ -1,7 +1,8 @@
 class_name GravityPhysics extends Nodot
 
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-@export var gravity := 9.8
+## Add gravity to the parent object
+
+@export var gravity := 9.8 ## Gravity strength
 
 @onready var parent = get_parent()
 
