@@ -1,15 +1,15 @@
 ![logo](logo.png)
 
 # Nodot3D
-**A 3D video game node library for Godot 4**
+**A 3D video game helper library for Godot 4**
 
 ## What is Nodot3D?
 
-Nodot is a 3D video game oriented collection of general purpose nodes for Godot 4. The goal is to provide a set of nodes that can be used to rapidly create a wide variety of games.
+Nodot is a 3D video game oriented collection of nodes, autoload scripts and scenes for Godot 4. The goal is to provide a set of tools that can be used to rapidly create a wide variety of games.
 
 ---
 
-## Node Categories
+## Scenes
 
 ### UI
 
@@ -21,25 +21,17 @@ Nodot is a 3D video game oriented collection of general purpose nodes for Godot 
 - MultiplayerMenu - A menu for multiplayer options
 - MultiplayerServerBrowser - A menu for a multiplayer server browser
 - MultiplayerLobbyMenu - A menu for multiplayer lobbies
+- PauseMenu - A pause menu with basic options
 
 #### Interfaces
 
-- PauseMenu - A pause menu with basic options
 - Inventory - An interface for inventory management
 - TechTree - An interface for a tech tree
 - QuestLog - An interface for a quest log
 - QuestProgress - An interface for quest progress
 - Chat - A simple interface for multiplayer chat
 - MiniMap - A simple interface for a mini map
-
-### Scene Management
-
-- SceneLoader - A node to manage scene loading
 - LoadingScreen - A loading screen for scenes
-
-### Networking
-
-- NetworkManager - A simple network manager for multiplayer games
 
 ### Characters
 
@@ -148,11 +140,11 @@ Nodot is a 3D video game oriented collection of general purpose nodes for Godot 
 
 ### First Person
 
-- FPSGun - A node to create a first person 3D gun or projectile weapon
+- FPSItem - A node to create a first person item (i.e gun, hammer etc)
 - FPSIronSight - A node to position an ironsight camera
 - FPSLaunchPosition - A node to position the point at which a projectile is launched
 - FPSLeftHand - A node to attach a left hand to the weapon
-- FPSRightHand - A node to attach a left hand to the weapon
+- FPSRightHand - A node to attach a right hand to the weapon
 - FPSArms - A node to attach hands to the weapon
 
 ### Sound
@@ -162,7 +154,10 @@ Nodot is a 3D video game oriented collection of general purpose nodes for Godot 
 - FootStepSounds - A node to manage and play footstep sounds
 - EngineSound - A node to manage and play motor engine sounds
 
-### Utilities
+## Autoload Scripts
 
-- SaveGame - A node to save and load game data
-- StateMachine - A node to create a simple state machine
+- SaveManager - A node to save and load game data
+- PlayerManager - A node to manage player data
+- WindowManager - A node to manage the game window
+- NetworkManager - A simple network manager for multiplayer games
+- SceneManager - A node to manage scene loading
